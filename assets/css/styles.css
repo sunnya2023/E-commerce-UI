@@ -21,7 +21,7 @@
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
   --body-font: "Lato", sans-serif;
-  --second-font: "League Spartan", sans-serif;
+  --second-font: "Spartan", sans-serif;
   --big-font-size: 3.5rem;
   --h1-font-size: 2.75rem;
   --h2-font-size: 2rem;
@@ -45,7 +45,7 @@
 
 /* Responsive typography */
 @media screen and (max-width: 1200px) {
-  :root {
+  /* :root {
     --big-font-size: ;
     --h1-font-size: ;
     --h2-font-size: ;
@@ -56,7 +56,7 @@
     --small-font-size: ;
     --smaller-font-size: ;
     --tiny-font-size: ;
-  }
+  } */
 }
 
 /*=============== BASE ===============*/
@@ -116,6 +116,23 @@ input {
   padding-inline: 0.75rem;
 }
 
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.section {
+  padding-block: 2rem;
+}
+.section--lg {
+  padding-block: 4rem;
+}
+.section__title {
+  font-size: var(--h4-font-size);
+  margin-bottom: 1.5rem;
+}
+.section__title span {
+  color: var(--first-color);
+}
 .form__input {
   border: 1px solid var(--border-color-alt);
   padding-inline: 1rem;
@@ -238,13 +255,89 @@ input {
   line-height: 18px;
 }
 /*=============== HOME ===============*/
+.home__container {
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+}
 
+.home__subtitle,
+.home__description {
+  font-size: var(--large-font-size);
+}
+.home__subtitle {
+  font-family: var(--second-font);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-700);
+  line-height: 1.4;
+}
+
+.home__title span {
+  color: var(--first-color);
+  font-size: var(--big-font-size);
+}
+
+.home__description {
+  margin-block: 0.5rem 2rem;
+}
+
+.home__img {
+  justify-self: flex-end;
+}
 /*=============== BUTTONS ===============*/
+.btn {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  display: inline-block;
+  border-radius: 0.25rem;
+  height: 49px;
+  line-height: 49px;
+  padding-inline: 1.75rem;
+  border: 2px solid var(--first-color);
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-700);
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--first-color);
+}
 
 /*=============== CATEGORIES ===============*/
+.categories {
+  overflow: hidden;
+}
+.category__item {
+  border: 1px solid var(--border-color);
+  padding: 0.625rem 0.625rem 1.25rem;
+  border-radius: 1.25rem;
+  text-align: center;
+}
 
+.category__img {
+  border-radius: 0cap;
+  margin-bottom: 1.25rem;
+}
+
+.catogry__title {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
 /* Swiper class */
-
+.swiper {
+  overflow: initial;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: -1.875rem;
+}
 /*=============== PRODUCTS ===============*/
 
 /* Active Tab */

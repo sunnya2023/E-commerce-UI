@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="" />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -87,10 +90,104 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home"></section>
+      <section class="home section--lg">
+        <div class="container home__container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Hot Promotions</span>
+            <h1 class="home__title">
+              Fashion Trending
+              <span> Great Collection</span>
+            </h1>
+            <p class="home__description">
+              Save more with coupons & up tp 20% off
+            </p>
+
+            <a href="shop.html" class="btn">Shop now</a>
+          </div>
+
+          <img
+            src="assets/img/home-img.png"
+            alt="배너 이미지"
+            class="home__img"
+          />
+        </div>
+      </section>
 
       <!--=============== CATEGORIES ===============-->
-      <section class="categories"></section>
+      <section class="categories container section">
+        <h3 class="section__title"><span>Popular</span> Categories</h3>
+
+        <div class="categories__container swiper">
+          <div class="swiper-wrapper">
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-1.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">T-Shirt</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-2.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Bags</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-3.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Sandal</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-4.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Scarf Cap</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-5.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Shoes</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-6.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Pillowcase</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-7.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Jumpsuit</h3>
+            </a>
+            <a href="" class="category__item swiper-slide">
+              <img
+                src="assets/img/category-8.jpg"
+                alt="카테고리"
+                class="category__img"
+              />
+              <h3 class="catogry__title">Hats</h3>
+            </a>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
 
       <!--=============== PRODUCTS ===============-->
       <section class="products"></section>
@@ -112,9 +209,8 @@
     <footer class="footer"></footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
