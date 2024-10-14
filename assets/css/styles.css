@@ -337,6 +337,26 @@ input {
 .swiper-button-next,
 .swiper-button-prev {
   top: -1.875rem;
+  width: 30px;
+  height: 30px;
+  background-color: var(--first-color-alt);
+  color: var(--first-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  font-size: var(--tiny-font-size);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-prev {
+  left: initial;
+  right: 2.5rem;
+}
+.swiper-button-next {
+  right: 0;
 }
 /*=============== PRODUCTS ===============*/
 
