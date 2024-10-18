@@ -34,3 +34,21 @@ var swiperCategories = new Swiper(".categories__container ", {
 /*=============== SWIPER PRODUCTS ===============*/
 
 /*=============== PRODUCTS TABS ===============*/
+const tabs = document.querySelectorAll("[data-target");
+tabContents = document.querySelectorAll("[content]");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    // console.log(target);
+    tabContents.forEach((tabcontent) => {
+      // console.log(tabcontent);
+      tabcontent.classList.remove("active-tab");
+    });
+    target.classList.add("active-tab");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-tab");
+    });
+    tab.classList.add("active-tab");
+  });
+});
